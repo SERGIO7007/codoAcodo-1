@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,133 +26,207 @@
     <!-- Barra de Navegación -->
 
     <nav
-    class="navbar navbar-expand-lg navbar-dark fixed-top"
-    style="background-color: rgb(26, 117, 188)"
-  >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="imagenes/icono1.webp"
-          alt="Logo pequeño de la Clínica Odontológica"
-          width="ms-auto"
-          height="40"
-        />
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: rgb(26, 117, 188)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="imagenes/icono1.webp"
+            alt="Logo pequeño de la Clínica Odontológica"
+            width="ms-auto"
+            height="40"
+          />
 
-        Clínica Odontológica
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="index.html"
-            >Inicio</a
-          >
-          <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
-          <a class="nav-link" href="tratamientos.html">Tratamientos</a>
-          <a class="nav-link" href="contacto.html">Contacto</a>
-          <a class="nav-link" href="turnosOnline.html">Turno Online</a>
-          <a class="nav-link" href="integrantes.html">Integrantes</a>
-          <a class="nav-link" href="integrantes1.html">Integrantes1</a>
+          Clínica Odontológica
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Inicio</a
+            >
+            <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+            <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="turnosOnline.html">Turno Online</a>
+            <a class="nav-link" href="integrantes.html">Integrantes</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--===== FORMULARIO ===== -->
+    <div class="formulario">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Solicite su turno</h4>
+                <p class="card-text">
+                  Para poder ofrecerle un turno acorde a sus necesidades, por
+                  favor complete todos los campos del formulario. A la brevedad
+                  se le estará enviando el turno solicitado. Le rogamos no
+                  hacerlo en más de una oportunidad para el mismo paciente, ya
+                  que eso perjudicaría el otorgamiento del mismo.
+                </p>
+                <form
+                  action="https://formspree.io/f/mdoqlwqe"
+                  method="POST"
+                  class="formulario-grid"
+                >
+                  <div class="grid-item">
+                    <label for="nombrePaciente" class="form-label"
+                      ><b>Nombre y Apellido del/la paciente:</b></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombrePaciente"
+                      name="nombrePaciente"
+                      placeholder="Ej: José/María Pérez"
+                      required
+                    />
+                  </div>
+                  <div class="grid-item">
+                    <label for="edadPaciente" class="form-label"
+                      ><b>Edad:</b></label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="edadPaciente"
+                      name="edadPaciente"
+                      min="1"
+                      max="100"
+                      required
+                    />
+                  </div>
+                  <div class="grid-item">
+                    <label for="emailPaciente" class="form-label"
+                      ><b>Correo electrónico:</b></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailPaciente"
+                      placeholder="Ej. nombre@gmail.com"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="grid-item">
+                    <label for="motivoConsulta" class="form-label"
+                      ><b>Motivo de la consulta:</b></label
+                    >
+                    <select class="form-select" id="motivoConsulta">
+                      <option value="consulta">Consulta</option>
+                      <option value="tratamiento">Tratamiento</option>
+                      <option value="presupuesto">Presupuesto</option>
+                    </select>
+                  </div>
+                  <div class="grid-item">
+                    <label for="fecha" class="form-label"
+                      ><b>Selecciona el día que prefieres el turno:</b> (Sujeto
+                      a disponibilidad)</label
+                    >
+                    <input type="date" class="form-control" id="fecha" />
+                  </div>
+                  <div class="grid-item">
+                    <label class="form-label"
+                      ><b>Horario que prefieres el turno:</b></label
+                    >
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="opcion"
+                          id="manana"
+                          value="1"
+                        />
+                        <label class="form-check-label" for="manana"
+                          >Mañana</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="opcion"
+                          id="tarde"
+                          value="2"
+                        />
+                        <label class="form-check-label" for="tarde"
+                          >Tarde</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <label class="form-label"
+                      ><b>¿Ya eres paciente de nuestra institución?</b></label
+                    >
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="esPaciente"
+                        name="si"
+                        value="1"
+                      />
+                      <label class="form-check-label" for="esPaciente"
+                        >Sí</label
+                      >
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <label for="comentarios" class="form-label"
+                      ><b>Déjanos un comentario:</b></label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="comentarios"
+                      name="message"
+                      placeholder="Quisiera indicar que..."
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <br />
+                  <div class="grid-item">
+                    <a href="mailto: alecarabajal@hotmail.com"
+                      ><button type="submit" class="btn btn-primary">
+                        Enviar
+                      </button></a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-
-    
-    <!--===== FORMULARIO UTILIZANDO FORMSPREE===== -->
-    
-    <div class="formulario">
-      <img
-      src="imagenes/fondoTurno.jpg"
-      alt="imagen de muela con calendario"
-      class="bg-image"
-      />
-      
-      <form action="https://formspree.io/f/mdoqlwqe" method="POST">
-
-        <h1>Solicite su turno</h1>
-<p>(Para poder ofrecerle un turno acorde a sus necesidades, por favor complete todos los campos del formulario. A la brevedad se le estará enviando el turno solicitado. <br>Le rogamos no hacerlo en más de una oportunidad para el mismo paciente, ya que eso perjudicaría el otorgamiento del mismo.)</p> <br>
-
-
-        <label>
-          <b>Nombre y Apellido del/la paciente:</b>
-          <input type="text" placeholder="Ej: José/María Pérez" required />
-        </label>
-        <br /><br />
-        <label
-          ><b>Edad:</b>
-          <input type="number" min="1" max="100" required />
-        </label>
-        <br /><br />
-        <label>
-          <b>Correo electrónico:</b>
-          <input
-            type="email"
-            placeholder="Ej. nombre@gmail.com"
-            name="email"
-            required
-          />
-        </label>
-        <br /><br />
-        <label
-          ><b>Motivo de la consulta</b>
-          <select>
-            <option value="">Consulta</option>
-            <option value="">Tratamiento</option>
-            <option value="">Presupuesto</option>
-          </select>
-        </label>
-        <br /><br/>
-        <label
-          ><b>Selecciona el día que prefieres el turno:</b> <br/>
-          (Sujeto a disponibilidad) <br/>
-          <input type="date" />
-        </label>
-
-        <br /><br />
-        <label>
-          <b>Horario que prefieres el turno:</b>
-          <input type="radio" name="opcion" value="1" /> Mañana
-          <input type="radio" name="opcion" value="2" /> Tarde
-        </label>
-        <br /><br />
-        <label>
-          <b>¿Ya eres paciente de nuestra institución?</b>
-          <input type="checkbox" name="si" value="1" />Si
-        </label>
-        <br /><br />
-
-        <label>
-          <b>Dejanos un comentarios:</b>
-          <br /><br>
-          <textarea
-            name="message"
-            placeholder="Quisiera indicar que..."
-          ></textarea>
-        </label>
-        <br /><br />
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-
+   
     <!--===== SECCION FOOTER =====-->
 
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <span class="copyright">Copyright &copy; Codo a Codo 2024</span>
+            <span class="copyright">Copyright &copy; Codo a Codo 2024 - Curso 24138 - Grupo 7</span>
           </div>
 
           <div class="col-md-12">
