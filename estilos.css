@@ -7,16 +7,16 @@ body {
 
 /* Carrusel */
 .carousel {
-  margin-top: 66px;
+  margin-top: 4.125rem;
 }
 
 .carousel-inner img {
   width: 100%;
-  max-height: 460px;
+  max-height: 28.75rem;
 }
 
 .carousel-inner {
-  height: 400px;
+  height: 25rem;
 }
 
 /* ===== Redes Sociales ===== */
@@ -43,7 +43,7 @@ body {
 
 .list-group {
   align-items: center;
-  gap: 80px;
+  gap: 5rem;
   justify-content: center;
 }
 
@@ -55,7 +55,7 @@ body {
   background-image: url("imagenes/instagram.png");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 1.5px;
+  border-radius: .0938rem;
   color: transparent;
   transform: scale(2.5);
   transition: 0.4s ease-in-out;
@@ -65,7 +65,7 @@ body {
   background-image: url("/imagenes/facebook.png");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 1.5px;
+  border-radius: .0938rem;
   color: transparent;
   transform: scale(2.5);
   transition: 0.4s ease-in-out;
@@ -75,7 +75,7 @@ body {
   background-image: url("/imagenes/twitter.png");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 1.5px;
+  border-radius: .0938rem;
   color: transparent;
   transform: scale(2.5);
   transition: 0.4s ease-in-out;
@@ -85,7 +85,7 @@ body {
   background-image: url("imagenes/WhatsApp.png");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 1.5px;
+  border-radius: .0938rem;
   color: transparent;
   transform: scale(2.5);
   transition: 0.4s ease-in-out;
@@ -137,7 +137,7 @@ footer li {
 
 /* SCROLL */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: .9375rem;
 }
 
 ::-webkit-scrollbar-track {

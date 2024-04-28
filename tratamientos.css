@@ -25,7 +25,7 @@ body {
     color: #000000;
     justify-content: center;
     flex-flow: row wrap;
-    padding-top: 1.5em;
+    padding-top: 5.5em;
   }
   .redes h2 {
     text-align: center;
@@ -42,7 +42,7 @@ body {
   
   .list-group {
     align-items: center;
-    gap: 80px;
+    gap: 5rem;
     justify-content: center;
   }
   
@@ -54,7 +54,7 @@ body {
     background-image: url("imagenes/instagram.png");
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 1.5px;
+    border-radius: .0938rem;
     color: transparent;
     transform: scale(2.5);
     transition: 0.4s ease-in-out;
@@ -64,7 +64,7 @@ body {
     background-image: url("/imagenes/facebook.png");
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 1.5px;
+    border-radius: .0938rem;
     color: transparent;
     transform: scale(2.5);
     transition: 0.4s ease-in-out;
@@ -74,7 +74,7 @@ body {
     background-image: url("/imagenes/twitter.png");
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 1.5px;
+    border-radius: .0938rem;
     color: transparent;
     transform: scale(2.5);
     transition: 0.4s ease-in-out;
@@ -84,7 +84,7 @@ body {
     background-image: url("imagenes/WhatsApp.png");
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 1.5px;
+    border-radius: .0938rem;
     color: transparent;
     transform: scale(2.5);
     transition: 0.4s ease-in-out;
@@ -136,7 +136,7 @@ body {
   
   /* SCROLL */
   ::-webkit-scrollbar {
-    width: 15px;
+    width: .9375rem;
   }
   
   ::-webkit-scrollbar-track {
